@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        'http://refertest.pythonanywhere.com/job/openings'
+        'https://refertest.pythonanywhere.com/job/openings'
       )
       .then(res => {
         setJobs(res.data.data);
@@ -22,7 +22,7 @@ function App() {
   }, []);
   useEffect(()=>{
     axios.get(
-      'http://refertest.pythonanywhere.com/user/data'
+      'https://refertest.pythonanywhere.com/user/data'
     )
     .then(respon=>{
       setName(respon.data.data)
